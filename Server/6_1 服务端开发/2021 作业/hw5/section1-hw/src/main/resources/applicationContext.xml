@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	   xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	   xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 扫描类包，将标注Spring注解的类自动转化Bean，同时完成Bean的注入 -->
+    <context:component-scan base-package="com.example.dao"/>
+	<!--必须添加这个扫描，不然无法实现实例化-->
+	<context:component-scan base-package="com.example.web"/>
+    <context:component-scan base-package="com.example.service"/>
+	<context:component-scan base-package="com.example.config"/>
+
+	<jpa:repositories base-package="com.example.dao" />
+
+	<bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+		  p:dataSource-ref="dataSource"
+		  p:persistenceUnitName="com"
+		  p:jpaVendorAdapter-ref="jpaVendorAdapter"
+		  p:packagesToScan="com.example.domain" />
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
+		  p:entityManagerFactory-ref="emf" />
+
+	<bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="database" value="H2" />
+		<property name="showSql" value="true" />
+		<property name="generateDdl" value="false" />
+		<property name="databasePlatform" value="org.hibernate.dialect.H2Dialect" />
+	</bean>
+
+	<jdbc:embedded-database id="dataSource" type="H2">
+		<jdbc:script location="classpath:schema.sql" />
+		<jdbc:script location="classpath:data.sql" />
+	</jdbc:embedded-database>
+
+	<!--必须配置这部分，不然无法检查-->
+	<mvc:annotation-driven validator="validator"/>
+
+	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+		<property name="providerClass" value="org.hibernate.validator.HibernateValidator"/>
+	</bean>
+</beans>

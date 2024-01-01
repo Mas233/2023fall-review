@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: licensingservice  #便于配置客户端知道正在查找哪个服务，对应到目录
+  profiles:
+    active:
+      default  #默认环境
+  cloud:
+    config:
+      enabled: true
+#      discovery:
+#        enabled: true
+#        serviceId: configserver

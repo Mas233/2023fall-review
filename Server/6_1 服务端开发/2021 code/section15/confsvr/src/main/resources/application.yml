@@ -1,0 +1,42 @@
+#server:
+#  port: 8888
+#spring:
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#      server:
+#        encrypt.enabled: false
+#        git:
+#          uri: https://github.com/tzs919/config15.git
+#          searchPaths: licensingservice,organizationservice,zuulservice
+#
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      discovery:
+        enabled: false
+      server:
+        encrypt.enabled: false
+        native:
+          searchLocations: classpath:config/licensingservice,classpath:config/organizationservice,classpath:config/zuulservice
+#          searchLocations: classpath:config/licensingservice,classpath:config/organizationservice,config/organizationservicenew,classpath:config/specialroutesservice,classpath:config/zuulservice
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG

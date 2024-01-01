@@ -1,0 +1,123 @@
+G:\anaconda3\envs\pytorch\python.exe D:/2023春/机器学习/作业2/code/main.py
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./dataset\MNIST\raw\train-images-idx3-ubyte.gz
+100.0%
+Extracting ./dataset\MNIST\raw\train-images-idx3-ubyte.gz to ./dataset\MNIST\raw
+
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./dataset\MNIST\raw\train-labels-idx1-ubyte.gz
+100.0%
+Extracting ./dataset\MNIST\raw\train-labels-idx1-ubyte.gz to ./dataset\MNIST\raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./dataset\MNIST\raw\t10k-images-idx3-ubyte.gz
+100.0%
+Extracting ./dataset\MNIST\raw\t10k-images-idx3-ubyte.gz to ./dataset\MNIST\raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./dataset\MNIST\raw\t10k-labels-idx1-ubyte.gz
+Extracting ./dataset\MNIST\raw\t10k-labels-idx1-ubyte.gz to ./dataset\MNIST\raw
+
+100.0%
+counter 0 iteration from     0 to   100 average loss:0.554
+counter 0 iteration from   100 to   200 average loss:0.127
+counter 0 iteration from   200 to   300 average loss:0.100
+counter 0 iteration from   300 to   400 average loss:0.088
+counter 0 iteration from   400 to   500 average loss:0.082
+counter 0 iteration from   500 to   600 average loss:0.068
+counter 0 iteration from   600 to   700 average loss:0.058
+counter 0 iteration from   700 to   800 average loss:0.064
+counter 0 iteration from   800 to   900 average loss:0.059
+Test Accuracy:98.1%
+counter 1 iteration from     0 to   100 average loss:0.048
+counter 1 iteration from   100 to   200 average loss:0.044
+counter 1 iteration from   200 to   300 average loss:0.038
+counter 1 iteration from   300 to   400 average loss:0.042
+counter 1 iteration from   400 to   500 average loss:0.035
+counter 1 iteration from   500 to   600 average loss:0.037
+counter 1 iteration from   600 to   700 average loss:0.047
+counter 1 iteration from   700 to   800 average loss:0.033
+counter 1 iteration from   800 to   900 average loss:0.036
+Test Accuracy:98.76%
+counter 2 iteration from     0 to   100 average loss:0.029
+counter 2 iteration from   100 to   200 average loss:0.028
+counter 2 iteration from   200 to   300 average loss:0.024
+counter 2 iteration from   300 to   400 average loss:0.031
+counter 2 iteration from   400 to   500 average loss:0.028
+counter 2 iteration from   500 to   600 average loss:0.029
+counter 2 iteration from   600 to   700 average loss:0.029
+counter 2 iteration from   700 to   800 average loss:0.021
+counter 2 iteration from   800 to   900 average loss:0.025
+Test Accuracy:99.02%
+counter 3 iteration from     0 to   100 average loss:0.014
+counter 3 iteration from   100 to   200 average loss:0.018
+counter 3 iteration from   200 to   300 average loss:0.014
+counter 3 iteration from   300 to   400 average loss:0.023
+counter 3 iteration from   400 to   500 average loss:0.014
+counter 3 iteration from   500 to   600 average loss:0.024
+counter 3 iteration from   600 to   700 average loss:0.019
+counter 3 iteration from   700 to   800 average loss:0.023
+counter 3 iteration from   800 to   900 average loss:0.025
+Test Accuracy:99.00999999999999%
+counter 4 iteration from     0 to   100 average loss:0.011
+counter 4 iteration from   100 to   200 average loss:0.013
+counter 4 iteration from   200 to   300 average loss:0.009
+counter 4 iteration from   300 to   400 average loss:0.016
+counter 4 iteration from   400 to   500 average loss:0.013
+counter 4 iteration from   500 to   600 average loss:0.017
+counter 4 iteration from   600 to   700 average loss:0.015
+counter 4 iteration from   700 to   800 average loss:0.022
+counter 4 iteration from   800 to   900 average loss:0.013
+Test Accuracy:99.03%
+counter 5 iteration from     0 to   100 average loss:0.010
+counter 5 iteration from   100 to   200 average loss:0.008
+counter 5 iteration from   200 to   300 average loss:0.005
+counter 5 iteration from   300 to   400 average loss:0.012
+counter 5 iteration from   400 to   500 average loss:0.011
+counter 5 iteration from   500 to   600 average loss:0.015
+counter 5 iteration from   600 to   700 average loss:0.013
+counter 5 iteration from   700 to   800 average loss:0.008
+counter 5 iteration from   800 to   900 average loss:0.010
+Test Accuracy:99.22%
+counter 6 iteration from     0 to   100 average loss:0.005
+counter 6 iteration from   100 to   200 average loss:0.003
+counter 6 iteration from   200 to   300 average loss:0.010
+counter 6 iteration from   300 to   400 average loss:0.009
+counter 6 iteration from   400 to   500 average loss:0.010
+counter 6 iteration from   500 to   600 average loss:0.009
+counter 6 iteration from   600 to   700 average loss:0.010
+counter 6 iteration from   700 to   800 average loss:0.010
+counter 6 iteration from   800 to   900 average loss:0.014
+Test Accuracy:99.28%
+counter 7 iteration from     0 to   100 average loss:0.006
+counter 7 iteration from   100 to   200 average loss:0.004
+counter 7 iteration from   200 to   300 average loss:0.003
+counter 7 iteration from   300 to   400 average loss:0.006
+counter 7 iteration from   400 to   500 average loss:0.004
+counter 7 iteration from   500 to   600 average loss:0.004
+counter 7 iteration from   600 to   700 average loss:0.006
+counter 7 iteration from   700 to   800 average loss:0.005
+counter 7 iteration from   800 to   900 average loss:0.007
+Test Accuracy:99.3%
+counter 8 iteration from     0 to   100 average loss:0.003
+counter 8 iteration from   100 to   200 average loss:0.002
+counter 8 iteration from   200 to   300 average loss:0.002
+counter 8 iteration from   300 to   400 average loss:0.003
+counter 8 iteration from   400 to   500 average loss:0.006
+counter 8 iteration from   500 to   600 average loss:0.002
+counter 8 iteration from   600 to   700 average loss:0.002
+counter 8 iteration from   700 to   800 average loss:0.006
+counter 8 iteration from   800 to   900 average loss:0.007
+Test Accuracy:99.28%
+counter 9 iteration from     0 to   100 average loss:0.005
+counter 9 iteration from   100 to   200 average loss:0.003
+counter 9 iteration from   200 to   300 average loss:0.004
+counter 9 iteration from   300 to   400 average loss:0.004
+counter 9 iteration from   400 to   500 average loss:0.003
+counter 9 iteration from   500 to   600 average loss:0.003
+counter 9 iteration from   600 to   700 average loss:0.003
+counter 9 iteration from   700 to   800 average loss:0.005
+counter 9 iteration from   800 to   900 average loss:0.001
+Test Accuracy:99.28%
+
+Process finished with exit code 0

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:c="http://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="compactDisc" class="soundsystem.SgtPeppers" />
+
+  <!--使用C命名空间，cd_ref指cd的引用，也可以使用_0-ref这样子声明-->
+  <bean id="cdPlayer" class="soundsystem.CDPlayer"
+        c:cd-ref="compactDisc" />
+
+</beans>
+

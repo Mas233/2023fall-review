@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--构造方法的注入，根元素是beans，所有的bean定义写在之中-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="compactDisc" class="soundsystem.SgtPeppers" />
+        
+  <bean id="cdPlayer" class="soundsystem.CDPlayer">
+    <!--通过这个子元素来声明构造方法参数-->
+    <constructor-arg ref="compactDisc" />
+  </bean>
+
+</beans>
